@@ -260,6 +260,7 @@ def palette_from_string(s):
 
 
 # downloader
+# TODO: wget doesnt work under windows, implement an alternative
 def wget_file(url, out):
     try:
         print(f"Downloading {out} from {url}, please wait")

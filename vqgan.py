@@ -98,12 +98,12 @@ class VqganDrawer(DrawingInterface):
         gumbel = False
 
         if settings.vqgan_config is None:
-            config_path = f'models/vqgan_{self.vqgan_model}.yaml'
+            config_path = f'./models/vqgan_{self.vqgan_model}.yaml'
         else:
             config_path = settings.config_path
 
         if settings.vqgan_checkpoint is None:
-            checkpoint_path = f'models/vqgan_{self.vqgan_model}.ckpt'
+            checkpoint_path = f'./models/vqgan_{self.vqgan_model}.ckpt'
         else:
             checkpoint_path = settings.checkpoint_path
 

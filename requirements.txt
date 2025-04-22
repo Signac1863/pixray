@@ -12,7 +12,7 @@ matplotlib==3.10.1
 braceexpand==0.1.7
 colorthief==0.2.1
 einops==0.8.1
-imageio==.2.37.0
+imageio==2.37.0
 ipython==9.1.0
 kornia==0.8.0
 omegaconf==2.3.0
