@@ -3,8 +3,8 @@
 # these are minimal requirements for just the VQGAN drawer
 
 --extra-index-url https://download.pytorch.org/whl/cu126
-torch==2.6.0
-torchvision==0.21.0
+torch==2.7.0
+torchvision==0.22.0
 
 numpy==2.2.5
 tqdm==4.67.1
@@ -24,7 +24,7 @@ torch_optimizer==0.3.0
 torch-tools==0.1.5
 
 # can use CompVis/taming-transformers when https://github.com/CompVis/taming-transformers/pull/81 is merged
-git+https://github.com/bfirsh/taming-transformers.git@7a6e64ee
+git+https://github.com/bfirsh/taming-transformers.git@7a6e64e
 git+https://github.com/openai/CLIP
 git+https://github.com/pvigier/perlin-numpy@6f077f8
 
