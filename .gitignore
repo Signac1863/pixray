@@ -4,7 +4,7 @@ __pycache__/
 # Libraries and Models
 CLIP/
 taming-transformers/
-taming/
+taming/modules/autoencoder
 checkpoints/
 
 # Editor
