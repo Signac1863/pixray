@@ -40,7 +40,7 @@ svgpathtools==1.6.1
 
 lpips==0.1.4
 sentence_transformers==4.1.0
-opencv-python
+opencv-python==4.11.0.86
 PyWavelets==1.8.0
 git+https://github.com/fbcotter/pytorch_wavelets
 
