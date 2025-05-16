@@ -20,7 +20,7 @@ Be sure to `git clone --recursive` to also get submodules.
 
 You can install `pip install -r requirements.txt` and then `pip install basicsr` manually in a fresh python 3.11 environment (eg: using conda). After that you can use the included `pixray.py` command line utility:
 
-    python pixray.py --drawer=pixel --prompt=sunrise --outdir sunrise01
+    python pixray.py --drawer=vqgan --prompt=sunrise --outdir sunrise01
 
 pixray can also be run from within your own python code, like this
 

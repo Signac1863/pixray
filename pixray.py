@@ -1642,6 +1642,7 @@ def do_run(args, return_display=False):
 
     return True
 
+# TODO needs ffmpeg to work
 def step_to_video(args):
     step_folder = os.path.join(args.outdir, "steps")
     output_file = os.path.join(step_folder, "output.mp4")
@@ -1675,6 +1676,7 @@ def step_to_video(args):
     p.stdin.close()
     p.wait()
 
+# TODO needs ffmpeg to work
 def do_video(args):
     global cur_iteration
     video_folder = os.path.join(args.outdir, "video")
@@ -1742,7 +1744,7 @@ def setup_parser(vq_parser):
     vq_parser.add_argument("-ilw",  "--image_label_weight", type=float, help="Weight for image prompt", default=1.0, dest='image_label_weight')
     vq_parser.add_argument("-i",    "--iterations", type=int, help="Number of iterations", default=None, dest='iterations')
     vq_parser.add_argument("-se",   "--save_every", type=str, help="Save image iterations", default=10, dest='save_every')
-    vq_parser.add_argument("-si",   "--save_intermediates", type=str2bool, help="Save image iterations as intermediate files", default=True, dest='save_intermediates')
+    vq_parser.add_argument("-si",   "--save_intermediates", type=str2bool, help="Save image iterations as intermediate files", default=False, dest='save_intermediates')
     vq_parser.add_argument("-de",   "--display_every", type=str, help="Display image iterations", default=20, dest='display_every')
     vq_parser.add_argument("-dc",   "--display_clear", type=str2bool, help="Clear dispaly when updating", default=False, dest='display_clear')
     vq_parser.add_argument("-ove",  "--overlay_every", type=str, help="Overlay image iterations", default="10 iterations", dest='overlay_every')
